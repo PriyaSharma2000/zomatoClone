@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter Pro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <table id="myTable">
+        <tr>
+          <th>Snack</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td class="snacks" id="bur">Burger</td>
+          <td id="priceBur" class="price">₹ 100</td>
+          <td class="quantity" id="quan1">
+            <div id="container">
+              <button class="btn" id="plusBur">+</button>
+              <input type="number" name="number" id="numBur" class="nmb" min="0" />
+              <button class="btn" id="subBur">-</button>
+            </div>
+          </td>
+          <td class="total" id="total1">₹<span id="totalBur">0</span></td>
+        </tr>
+        <tr>
+          <td class="snacks" id="pizz">Pizza</td>
+          <td id="pricePizz" class="price">₹ 200</td>
+          <td class="quantity" id="quan2">
+            <div id="container">
+              <button class="btn" id="plusPizz">+</button>
+              <input type="number" name="number" id="numPizz" class="nmb" min="0" />
+              <button class="btn" id="subPizz">-</button>
+            </div>
+          </td>
+          <td class="total" id="total2">₹<span id="totalPizz">0</span></td>
+        </tr>
+        <tr>
+          <td class="snacks" id="cake">Choco Lava Cake</td>
+          <td id="priceCake" class="price">₹ 150</td>
+          <td class="quantity" id="quan3">
+            <div id="container">
+              <button class="btn" id="plusCake">+</button>
+              <input type="number" name="number" id="numCake" class="nmb" min="0" />
+              <button class="btn" id="subCake">-</button>
+            </div>
+          </td>
+          <td class="total" id="total3">₹<span id="totalCake">0</span></td>
+        </tr>
+        <tr>
+          <td class="snacks" id="honey">Honey Chilli Potato</td>
+          <td id="priceHoney" class="price">₹ 190</td>
+          <td class="quantity" id="quan4">
+            <div id="container">
+              <button class="btn" id="plusHoney">+</button>
+              <input type="number" name="number" id="numHoney" class="nmb" min="0" />
+              <button class="btn" id="subHoney">-</button>
+            </div>
+          </td>
+          <td class="total" id="total4">₹<span id="totalHoney">0</span></td>
+          </tr>
+        <tr>
+          <td class="snacks" id="mojito">Mojito</td>
+          <td id="priceMo" class="price">₹ 150</td>
+          <td class="quantity" id="quan5">
+            <div id="container">
+              <button class="btn" id="plusMo">+</button>
+              <input type="number" name="number" id="numMo" class="nmb" min="0" />
+              <button class="btn" id="subMo">-</button>
+            </div>
+          </td>
+          <td class="total" id="total5">₹<span id="totalMo">0</span></td>
+        </tr>
+        <tr>
+          <td colspan="3" class="subtotal">Sub Total</td>
+          <td id="sum"><span id="sign">₹</span><span id="subTotal">0</span></td>
+        </tr>
+        <tr>
+          <td colspan="3" class="tax">Tax (10%)</td>
+          <td class="Tax"><span id="sign">₹</span><span id="Tax"></span></td>
+        </tr>
+        <tr>
+          <td colspan="3" class="bill">Final Bill Amount</td>
+          <td class="Bill"><span id="sign">₹</span><span id="Bill"></span></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <!-- <script src="index.js"></script> -->
+  <script src="counter.js"></script>
+</html>
